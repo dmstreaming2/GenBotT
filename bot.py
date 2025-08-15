@@ -7,7 +7,8 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 # ------------------------
 # CONFIGURA TU TOKEN AQUÍ
 # ------------------------
-TOKEN = "7736480325:AAE6XAIWZflC1jj6uzEx9ilz7ymKP9zSE0I"
+import os
+TOKEN = os.getenv("TOKEN")
 
 # Redes y BINs base de ejemplo
 BIN_PREFIXES = {
@@ -113,3 +114,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
